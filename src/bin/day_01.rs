@@ -39,7 +39,7 @@ fn read_moves(file: &str) -> Vec<Move> {
 
 fn main() {
     let moves = read_moves("day1_real.txt");
-       
+
     let mut part_1 = 0;
     let mut part_2 = 0;
     let mut loc = 50;
@@ -54,11 +54,10 @@ fn main() {
             part_1 += 1;
         }
         part_2 += count_crossings(before, after);
-        
+
         loc = after.rem_euclid(100);
     }
-    
+
     println!("Part 1: {}", part_1);
     println!("Part 2: {}", part_2);
 }
-
