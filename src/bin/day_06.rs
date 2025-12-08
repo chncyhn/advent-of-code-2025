@@ -103,4 +103,3 @@ fn main() {
     println!("Part 1: {}", process(&eqs));
     println!("Part 2: {}", process(&eqs_2));
 }
-
